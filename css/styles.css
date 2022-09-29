@@ -12,12 +12,6 @@ body {
   background-color: var(--white-bgc);
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .list {
   list-style: none;
   margin: 0;
@@ -28,7 +22,30 @@ body {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-section,
+.nav-box {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
 .logo {
+  margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -48,8 +65,17 @@ body {
   color: var(--white-bgc);
 }
 
+.nav-list-item:not(:last-child),
+.contacts-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link,
 .header-contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -60,12 +86,12 @@ body {
   color: var(--primary-text-color);
 }
 
-.header-contacts {
-  color: var(--secondary-text-color);
-}
-
 .active-link {
   color: var(--accent-color);
+}
+
+.header-contacts {
+  color: var(--secondary-text-color);
 }
 
 .address-box {
