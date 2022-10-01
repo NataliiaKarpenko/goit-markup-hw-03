@@ -22,6 +22,7 @@
 /* Common classes */
 
 body {
+  min-width: 1600px;
   font-family: 'Roboto', sans-serif;
   background-color: var(--white-bgc);
 }
