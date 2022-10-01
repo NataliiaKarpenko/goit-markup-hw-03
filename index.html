@@ -18,25 +18,29 @@
   </head>
 
   <body>
-    <header>
-      <div class="container header-section">
-        <nav class="nav-box">
-          <a href="./index.html" class="logo link"
-            ><span class="logo-initial">Web</span><span class="nav-logo-final">Studio</span></a
+    <header class="header-section">
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="./index.html" class="link logo header-logo"
+            ><span class="logo-initial">Web</span><span class="header-logo-final">Studio</span></a
           >
-          <ul class="list nav-list">
-            <li class="nav-list-item"><a href="./" class="link nav-link active-link">Студія</a></li>
-            <li class="nav-list-item">
-              <a href="./portfolio.html" class="link nav-link">Портфоліо</a>
+          <ul class="list menu-list">
+            <li class="header-list-item">
+              <a href="./" class="link menu-link active-link">Студія</a>
             </li>
-            <li class="nav-list-item"><a href="#" class="link nav-link">Контакти</a></li>
+            <li class="header-list-item">
+              <a href="./portfolio.html" class="link menu-link">Портфоліо</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./#address-box" class="link menu-link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="list contacts-list">
-          <li class="contacts-list-item">
+          <li class="header-list-item">
             <a href="mailto:info@devstudio.com" class="link header-contacts">info@devstudio.com</a>
           </li>
-          <li class="contacts-list-item">
+          <li class="header-list-item">
             <a href="tel:+380961111111" class="link header-contacts">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -54,29 +58,29 @@
       </section>
 
       <!-- Our benefits section -->
-      <section>
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="list">
-            <li>
+          <ul class="list description-list">
+            <li class="benefits-item">
               <h3 class="benefits-title">Увага до деталей</h3>
               <p class="benefits-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <h3 class="benefits-title">Пунктуальність</h3>
               <p class="benefits-text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <h3 class="benefits-title">Планування</h3>
               <p class="benefits-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <h3 class="benefits-title">Сучасні технології</h3>
               <p class="benefits-text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -87,80 +91,82 @@
       </section>
 
       <!-- Services section -->
-      <section>
+      <section class="section services-section">
         <div class="container">
-          <h2 class="services-section-title">Чим ми займаємося</h2>
-          <ul class="list">
-            <li>
-              <img src="./images/img-1.jpg" alt="зображення вебдодатків" width="370" />
-            </li>
-            <li>
+          <h2 class="section-title">Чим ми займаємося</h2>
+          <ul class="list description-list">
+            <li class="services-item">
               <img
-                src="./images/img-2.jpg"
-                alt="зображення мобільніх додатків для IPhone та Android"
+                src="./images/img-1.jpg"
+                alt="зображення вебдодатків"
+                class="services-image"
                 width="370"
               />
             </li>
-            <li>
-              <img src="./images/img-3.jpg" alt="зображення додатку для IPad" width="370" />
+            <li class="services-item">
+              <img
+                src="./images/img-2.jpg"
+                alt="зображення мобільніх додатків для IPhone та Android"
+                class="services-image"
+                width="370"
+              />
+            </li>
+            <li class="services-item">
+              <img
+                src="./images/img-3.jpg"
+                alt="зображення додатку для IPad"
+                class="services-image"
+                width="370"
+              />
             </li>
           </ul>
         </div>
       </section>
 
       <!-- Team section -->
-      <section class="team-section">
+      <section class="section team-section">
         <div class="container">
-          <h2 class="team-section-title">Наша команда</h2>
-          <ul class="list">
-            <li>
-              <div class="team-member-card">
-                <img
-                  src="./images/photo-1.jpg"
-                  alt="фото дизайнера продукту"
-                  class="team-member-photo"
-                  width="270"
-                />
-
-                <h3 class="team-member-name">Ігор Дем'яненко</h3>
-                <p lang="en" class="team-member-occupation">Product Designer</p>
-              </div>
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="list description-list">
+            <li class="team-item">
+              <img
+                src="./images/photo-1.jpg"
+                alt="фото дизайнера продукту"
+                class="team-photo"
+                width="270"
+              />
+              <h3 class="team-name">Ігор Дем'яненко</h3>
+              <p lang="en" class="team-occupation">Product Designer</p>
             </li>
-            <li>
-              <div class="team-card">
-                <img
-                  src="./images/photo-2.jpg"
-                  alt="фото фронтенд розробника"
-                  class="team-member-photo"
-                  width="270"
-                />
-                <h3 class="team-member-name">Ольга Рєпіна</h3>
-                <p lang="en" class="team-member-occupation">Frontend Developer</p>
-              </div>
+            <li class="team-item">
+              <img
+                src="./images/photo-2.jpg"
+                alt="фото фронтенд розробника"
+                class="team-photo"
+                width="270"
+              />
+              <h3 class="team-name">Ольга Рєпіна</h3>
+              <p lang="en" class="team-occupation">Frontend Developer</p>
             </li>
-            <li>
-              <div class="team-card">
-                <img
-                  src="./images/photo-3.jpg"
-                  alt="фото маркетолога"
-                  class="team-photo"
-                  width="270"
-                />
-                <h3 class="team-member-name">Микола Тарасов</h3>
-                <p lang="en" class="team-member-occupation">Marketing</p>
-              </div>
+            <li class="team-item">
+              <img
+                src="./images/photo-3.jpg"
+                alt="фото маркетолога"
+                class="team-photo"
+                width="270"
+              />
+              <h3 class="team-name">Микола Тарасов</h3>
+              <p lang="en" class="team-occupation">Marketing</p>
             </li>
-            <li>
-              <div class="team-card">
-                <img
-                  src="./images/photo-4.jpg"
-                  alt="фото дизайнера інтерфейсів"
-                  class="team-member-photo"
-                  width="270"
-                />
-                <h3 class="team-member-name">Михайло Єрмаков</h3>
-                <p lang="en" class="team-member-occupation">UI Designer</p>
-              </div>
+            <li class="team-item">
+              <img
+                src="./images/photo-4.jpg"
+                alt="фото дизайнера інтерфейсів"
+                class="team-photo"
+                width="270"
+              />
+              <h3 class="team-name">Михайло Єрмаков</h3>
+              <p lang="en" class="team-occupation">UI Designer</p>
             </li>
           </ul>
         </div>
@@ -169,10 +175,10 @@
 
     <footer class="footer-section">
       <div class="container">
-        <a href="./index.html" class="logo link"
+        <a href="./index.html" class="link logo footer-logo"
           ><span class="logo-initial">Web</span><span class="footer-logo-final">Studio</span></a
         >
-        <address class="address-box">
+        <address class="address-box" id="address-box">
           <ul class="list">
             <li>
               <a href="http://surl.li/dbvrt" class="link footer-address"
