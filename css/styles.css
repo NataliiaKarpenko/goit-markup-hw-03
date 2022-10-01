@@ -19,12 +19,12 @@
   text-decoration: none;
 }
 
+/* Common classes */
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--white-bgc);
 }
-
-/* Common classes */
 
 .container {
   margin-left: auto;
@@ -175,6 +175,8 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* Studio page */
+
 .hero-section {
   text-align: center;
   padding-top: 200px;
@@ -195,7 +197,7 @@ body {
   color: var(--white-bgc);
 }
 
-.order-btn {
+.hero-btn {
   padding: 10px 32px;
 
   font-weight: 700;
