@@ -57,6 +57,12 @@ body {
   display: flex;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Header & footer */
 
 .header-section {
@@ -143,12 +149,14 @@ body {
 }
 
 .footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--dark-grey-bgc);
 }
 
 .footer-logo {
   margin-bottom: 20px;
-  padding-top: 60px;
 }
 
 .footer-logo-final {
@@ -156,8 +164,6 @@ body {
 }
 
 .address-box {
-  padding-bottom: 60px;
-
   font-style: normal;
 }
 
@@ -174,6 +180,10 @@ body {
 
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Studio page */
@@ -212,8 +222,8 @@ body {
   border-radius: 4px;
 }
 
-.order-btn:hover,
-.order-btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   background-color: #188ce8;
   cursor: pointer;
 }
@@ -264,10 +274,6 @@ body {
   color: var(--primary-text-color);
 }
 
-.services-image {
-  display: block;
-}
-
 .team-section {
   background-color: var(--light-grey-bgc);
 }
@@ -282,9 +288,9 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-photo {
-  display: block;
-  margin-bottom: 30px;
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-name {
@@ -301,8 +307,6 @@ body {
 .team-occupation {
   margin-top: 0;
   margin-bottom: 0px;
-  padding-bottom: 30px;
-  font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -313,7 +317,7 @@ body {
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
@@ -363,12 +367,10 @@ body {
   margin-bottom: 0;
 }
 
-.project-image {
-  display: block;
-}
-
 .project-box {
+  padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 24px;
 
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -378,7 +380,6 @@ body {
 .project-title {
   margin-top: 0;
   margin-bottom: 4px;
-  padding-left: 24px;
 
   font-size: 18px;
   line-height: 2;
@@ -389,7 +390,6 @@ body {
 .project-text {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 24px;
 
   font-size: 16px;
   line-height: 1.88;
